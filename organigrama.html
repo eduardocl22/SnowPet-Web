@@ -8,11 +8,11 @@
 </head>
 <body class="bg-[#172335] min-h-screen flex flex-col text-white">
 
-  <!-- Header/Nav -->
+  <!-- Header/Nav igual que el index -->
   <nav class="bg-black w-full fixed top-0 z-10">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Logo SnowPet" class="h-8 w-8">
+        <img src="images/Logo.jpg" alt="Logo SnowPet" class="h-10 w-10 rounded-lg shadow">
         <span class="font-extrabold text-teal-400 text-xl">SnowPet</span>
       </div>
       <div class="flex items-center space-x-4">
@@ -28,11 +28,94 @@
   </nav>
   <div class="pt-24"></div>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <div class="max-w-5xl mx-auto px-4 py-12">
-    <h1 class="text-3xl font-bold text-teal-300 mb-6">Organigrama y planificación estratégica</h1>
-    <!-- Aquí agrega tu organigrama, capturas, etc. -->
-  </div>
+  <!-- ORGANIGRAMA: SOLO DEJA EL ESPACIO EN BLANCO PARA TU IMAGEN -->
+  <section class="max-w-5xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-teal-300 mb-8 text-center">Organigrama</h1>
+    <div class="flex flex-col items-center justify-center border-2 border-dashed border-teal-400 rounded-xl bg-[#1f3b4d]/30 p-4 w-full max-w-3xl mx-auto">
+  <!-- Aquí puedes agregar luego tu imagen del organigrama -->
+  <img src="images/organigrama.png" alt="Organigrama SnowPet" class="w-full rounded-xl shadow-lg">
+</div>
+  </section>
+
+  <!-- PLANEACIÓN ESTRATÉGICA -->
+  <section class="max-w-4xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold text-teal-300 mb-8 text-center">Planeación Estratégica</h2>
+    <!-- Misión y Visión alineadas -->
+    <div class="flex flex-col md:flex-row gap-6 mb-8 justify-center">
+      <!-- Misión -->
+      <div class="flex-1 bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex flex-col items-center">
+        <h3 class="text-xl font-extrabold text-teal-300 mb-2">Misión</h3>
+        <p class="text-gray-100 text-center">
+          Ayudar a dueños de mascotas a reencontrarse con sus animales perdidos de forma rápida y eficiente, mediante una plataforma que conecta a la comunidad, refugios y clínicas veterinarias con tecnología avanzada de geolocalización y notificaciones en tiempo real.
+        </p>
+      </div>
+      <!-- Visión -->
+      <div class="flex-1 bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex flex-col items-center">
+        <h3 class="text-xl font-extrabold text-teal-300 mb-2">Visión</h3>
+        <p class="text-gray-100 text-center">
+          Ser la mejor aplicación en la búsqueda y recuperación de mascotas perdidas, creando una red global de apoyo entre dueños, refugios y veterinarios, reduciendo drásticamente la cantidad de mascotas extraviadas.
+        </p>
+      </div>
+    </div>
+    <!-- Valores grande abajo -->
+    <div class="bg-[#16415e] rounded-2xl shadow-lg p-8 mt-6 mx-auto max-w-2xl">
+      <h3 class="text-2xl font-extrabold text-teal-300 mb-4 text-center">Valores</h3>
+      <ul class="list-disc ml-6 space-y-2 text-gray-100">
+        <li>
+          <b>Compromiso:</b> Mantenemos un firme compromiso con el bienestar animal y la protección de las mascotas, priorizando su seguridad y reencuentro con sus familias en cada una de nuestras acciones y servicios.
+        </li>
+        <li>
+          <b>Innovación:</b> Fomentamos el uso de tecnologías avanzadas y buscamos constantemente soluciones creativas que optimicen los procesos de búsqueda, rescate y protección animal.
+        </li>
+        <li>
+          <b>Colaboración y solidaridad:</b> Trabajamos de manera conjunta con la comunidad, refugios y profesionales veterinarios, promoviendo la ayuda mutua y el apoyo entre todos los actores involucrados en el bienestar de las mascotas.
+        </li>
+        <li>
+          <b>Responsabilidad y transparencia:</b> Actuamos con integridad, honestidad y claridad en cada interacción, asegurando la confidencialidad de la información y la confianza de nuestros usuarios y aliados.
+        </li>
+        <li>
+          <b>Atención y servicio:</b> Nos esforzamos por brindar una atención personalizada, empática y eficiente, escuchando activamente a nuestros usuarios para comprender y satisfacer sus necesidades de forma oportuna y profesional.
+        </li>
+        <li>
+          <b>Trabajo en equipo:</b> Valoramos la cooperación y la participación de todos los miembros de nuestro equipo, impulsando un ambiente laboral ético, colaborativo y orientado al logro de los objetivos institucionales.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OBJETIVOS INSTITUCIONALES -->
+  <section class="max-w-5xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold text-teal-300 mb-8 text-center">Objetivos Institucionales</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center">
+        <span class="text-gray-100 font-semibold">
+          Aumentar la tasa de recuperación de mascotas reportadas como perdidas en la plataforma en los próximos 12 meses, fortaleciendo alianzas con refugios y clínicas veterinarias.
+        </span>
+      </div>
+      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center">
+        <span class="text-gray-100 font-semibold">
+          Expandir la base de usuarios en un 30% en los próximos 6 meses, enfocándose en dueños de mascotas en nuevas ciudades.
+        </span>
+      </div>
+      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center">
+        <span class="text-gray-100 font-semibold">
+          Mejorar la retención de usuarios activos en un 30% ofreciendo funciones adicionales y atención personalizada.
+        </span>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center">
+        <span class="text-gray-100 font-semibold">
+          Innovar continuamente para diferenciar a SnowPet como la plataforma más rápida y eficiente en búsqueda y rescate de mascotas.
+        </span>
+      </div>
+      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center">
+        <span class="text-gray-100 font-semibold">
+          Fomentar una cultura organizacional de aprendizaje continuo, innovación y adaptación.
+        </span>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-black py-5 mt-auto">
