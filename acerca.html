@@ -30,9 +30,34 @@
 
   <!-- CONTENIDO PRINCIPAL -->
   <div class="max-w-5xl mx-auto px-4 py-12">
-    <h1 class="text-3xl font-bold text-teal-300 mb-6">Acerca de SnowPet</h1>
-    <!-- Aquí agrega tu información, imágenes, etc. -->
+    <!-- Bloque destacado de ubicación -->
+    <div class="bg-[#155e75] rounded-t-xl px-6 py-6 flex items-center space-x-4 mb-8">
+      <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4.8-4.6-8-8.1-8-11.5A8 8 0 1 1 20 9.5c0 3.4-3.2 6.9-8 11.5z"/>
+        <circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="2" fill="none"/>
+      </svg>
+      <h2 class="text-2xl md:text-3xl font-bold text-white">Ubicación Geográfica</h2>
+    </div>
+    <div class="bg-[#1f3b4d] rounded-b-xl px-6 py-8">
+      <p class="mb-6 text-white text-lg font-semibold">
+        SnowPet se encuentra ubicado en la ciudad de Santa Cruz de la Sierra, en el <span class="text-teal-300 font-bold">Barrio Las Pampitas, Calle 5</span>.
+        Esta situada al este de la ciudad, cerca de la avenida Virgen de Cotoca.
+      </p>
+      <div class="flex flex-col md:flex-row gap-6 items-center justify-center">
+        <!-- Imagen de ubicación/mapa -->
+        <div class="flex flex-col items-center w-full md:w-1/2">
+          <img src="images/ubicacion.jpg" alt="Ubicación en el mapa" class="rounded-xl border-2 border-teal-400 shadow mb-2 max-w-xs w-full h-auto">
+          <span class="text-white font-medium">Ubicación en el mapa</span>
+        </div>
+        <!-- Imagen de local/instalación -->
+        <div class="flex flex-col items-center w-full md:w-1/2">
+          <img src="images/local.jpg" alt="Vista del local" class="rounded-xl border-2 border-teal-400 shadow mb-2 max-w-xs w-full h-auto">
+          <span class="text-white font-medium">Vista del local</span>
+        </div>
+      </div>
+    </div>
   </div>
+  
 
   <!-- Footer -->
   <footer class="bg-black py-5 mt-auto">
