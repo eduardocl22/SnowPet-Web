@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SnowPet – Rescate de Mascotas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#172335] min-h-screen flex flex-col text-white">
+
+  <!-- Header/Nav con logo personalizado y 4 botones -->
+  <nav class="bg-black w-full fixed top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <!-- Logo desde carpeta images -->
+        <img src="images/Logo.jpg" alt="Logo SnowPet" class="h-10 w-10 rounded-lg shadow">
+        <span class="font-extrabold text-teal-400 text-xl">SnowPet</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="index.html" class="text-white text-base font-semibold border-b-2 border-teal-400 pb-1">Inicio</a>
+        <span class="border-r border-gray-500 h-6"></span>
+        <a href="organigrama.html" class="text-white text-base font-semibold hover:text-teal-300 transition">Organigrama, planificación estratégica</a>
+        <span class="border-r border-gray-500 h-6"></span>
+        <a href="acerca.html" class="text-white text-base font-semibold hover:text-teal-300 transition">Acerca de</a>
+        <span class="border-r border-gray-500 h-6"></span>
+        <a href="foda.html" class="text-white text-base font-semibold hover:text-teal-300 transition">FODA, Porter y BCG</a>
+      </div>
+    </div>
+  </nav>
+  <div class="pt-24"></div>
+
+  <!-- Hero principal -->
+  <header class="max-w-5xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-between gap-10">
+    <div class="flex-1 space-y-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+        Plataforma para el<br>
+        <span class="text-teal-400">rescate y localización</span> <br>
+        de mascotas perdidas
+      </h1>
+      <p class="text-lg text-gray-200">
+        SnowPet es una app móvil que conecta a dueños, rescatistas y la comunidad para encontrar mascotas extraviadas usando tecnología de geolocalización y una red solidaria.
+      </p>
+      <div class="flex gap-4">
+        <a href="#" class="px-6 py-3 bg-blue-700 text-white rounded-full font-semibold shadow hover:bg-blue-800 transition">Descubre cómo funciona</a>
+        <a href="#" class="px-6 py-3 bg-teal-500 text-white rounded-full font-semibold shadow hover:bg-teal-600 transition">Contáctanos</a>
+      </div>
+    </div>
+    <div class="flex-1 flex items-center justify-center">
+      <!-- Logo desde carpeta images en el hero -->
+      <img src="images/Logo.jpg" alt="Mascota SnowPet" class="w-64 rounded-2xl shadow-lg border-4 border-gray-600">
+    </div>
+  </header>
+
+  <!-- Funcionalidades -->
+<section class="max-w-4xl mx-auto px-4 py-10">
+  <h2 class="text-2xl font-bold text-teal-300 mb-6 text-center">¿Qué ofrece SnowPet?</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Reportar mascota" class="w-12 h-12 mt-1">
+      <div>
+        <h3 class="text-lg font-semibold text-teal-300">Reporta mascotas perdidas</h3>
+        <p class="text-gray-300">Publica información y fotos de tu mascota perdida para que la comunidad y refugios te ayuden a encontrarla rápidamente.</p>
+      </div>
+    </div>
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+      <img src="https://cdn-icons-png.flaticon.com/512/854/854866.png" alt="Geolocalización" class="w-12 h-12 mt-1">
+      <div>
+        <h3 class="text-lg font-semibold text-teal-300">Geolocalización avanzada</h3>
+        <p class="text-gray-300">Utiliza tecnología GPS para registrar y visualizar avistamientos en tiempo real, optimizando la búsqueda por ubicación.</p>
+      </div>
+    </div>
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+      <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="Comunidad" class="w-12 h-12 mt-1">
+      <div>
+        <h3 class="text-lg font-semibold text-teal-300">Comunidad activa y solidaria</h3>
+        <p class="text-gray-300">Conecta con dueños de mascotas, rescatistas, veterinarias y refugios en una red colaborativa para maximizar el rescate.</p>
+      </div>
+    </div>
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+      <img src="https://cdn-icons-png.flaticon.com/512/1827/1827343.png" alt="Alertas" class="w-12 h-12 mt-1">
+      <div>
+        <h3 class="text-lg font-semibold text-teal-300">Alertas y notificaciones</h3>
+        <p class="text-gray-300">Recibe avisos inmediatos de mascotas perdidas cerca de ti o en tu zona, para actuar a tiempo y ayudar.</p>
+      </div>
+    </div>
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+      <img src="https://cdn-icons-png.flaticon.com/512/2203/2203159.png" alt="Consejos" class="w-12 h-12 mt-1">
+      <div>
+        <h3 class="text-lg font-semibold text-teal-300">Interacción y consejos</h3>
+        <p class="text-gray-300">Comparte y accede a consejos sobre el cuidado de mascotas, reporta avistamientos y deja mensajes de apoyo.</p>
+      </div>
+    </div>
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Redes sociales" class="w-12 h-12 mt-1">
+      <div>
+        <h3 class="text-lg font-semibold text-teal-300">Compartir en redes sociales</h3>
+        <p class="text-gray-300">Difunde anuncios en Facebook, Twitter y WhatsApp para ampliar el alcance y aumentar las posibilidades de rescate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer sencillo -->
+  <footer class="bg-black py-5 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex justify-center items-center text-gray-400 text-sm">
+      &copy; 2024 SnowPet. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>
