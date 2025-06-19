@@ -5,6 +5,17 @@
   <title>SnowPet – Rescate de Mascotas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .slide-in {
+      transform: translateX(80px);
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.77,0,0.18,1);
+    }
+    .slide-in.show {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  </style>
 </head>
 <body class="bg-[#172335] min-h-screen flex flex-col text-white">
 
@@ -17,13 +28,13 @@
         <span class="font-extrabold text-teal-400 text-xl">SnowPet</span>
       </div>
       <div class="flex items-center space-x-4">
-        <a href="index.html" class="text-white text-base font-semibold border-b-2 border-teal-400 pb-1">Inicio</a>
+        <a href="index.html" class="text-white text-base font-semibold border-b-2 border-teal-400 pb-1 transition duration-300">Inicio</a>
         <span class="border-r border-gray-500 h-6"></span>
-        <a href="organigrama.html" class="text-white text-base font-semibold hover:text-teal-300 transition">Organigrama, planificación estratégica</a>
+        <a href="organigrama.html" class="text-white text-base font-semibold hover:text-teal-300 transition duration-300">Organigrama, planificación estratégica</a>
         <span class="border-r border-gray-500 h-6"></span>
-        <a href="acerca.html" class="text-white text-base font-semibold hover:text-teal-300 transition">Acerca de</a>
+        <a href="acerca.html" class="text-white text-base font-semibold hover:text-teal-300 transition duration-300">Acerca de</a>
         <span class="border-r border-gray-500 h-6"></span>
-        <a href="foda.html" class="text-white text-base font-semibold hover:text-teal-300 transition">FODA, Porter y BCG</a>
+        <a href="foda.html" class="text-white text-base font-semibold hover:text-teal-300 transition duration-300">FODA, Porter y BCG</a>
       </div>
     </div>
   </nav>
@@ -31,7 +42,7 @@
 
   <!-- Hero principal -->
   <header class="max-w-5xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-between gap-10">
-    <div class="flex-1 space-y-6">
+    <div class="flex-1 space-y-6 slide-in" id="hero-text">
       <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
         Aplicación para el<br>
         <span class="text-teal-400">rescate y localización</span> <br>
@@ -41,12 +52,11 @@
         SnowPet es una app móvil que conecta a dueños, rescatistas y la comunidad para encontrar mascotas extraviadas usando tecnología de geolocalización y una red solidaria.
       </p>
       <div class="flex gap-4">
-        <a href="#" class="px-6 py-3 bg-blue-700 text-white rounded-full font-semibold shadow hover:bg-blue-800 transition">Descubre cómo funciona</a>
-        <a href="#" class="px-6 py-3 bg-teal-500 text-white rounded-full font-semibold shadow hover:bg-teal-600 transition">Contáctanos</a>
+        <a href="#" class="px-6 py-3 bg-blue-700 text-white rounded-full font-semibold shadow hover:bg-blue-800 hover:-translate-y-1 hover:scale-105 transition-all duration-300">Descubre cómo funciona</a>
+        <a href="#" class="px-6 py-3 bg-teal-500 text-white rounded-full font-semibold shadow hover:bg-teal-600 hover:-translate-y-1 hover:scale-105 transition-all duration-300">Contáctanos</a>
       </div>
     </div>
-    <div class="flex-1 flex items-center justify-center">
-      <!-- Logo desde carpeta images en el hero -->
+    <div class="flex-1 flex items-center justify-center slide-in" id="hero-logo">
       <img src="images/Logo.jpg" alt="Mascota SnowPet" class="w-64 rounded-2xl shadow-lg border-4 border-gray-600">
     </div>
   </header>
@@ -55,42 +65,48 @@
 <section class="max-w-4xl mx-auto px-4 py-10">
   <h2 class="text-2xl font-bold text-teal-300 mb-6 text-center">¿Qué ofrece SnowPet?</h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start
+      transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-teal-400/70 slide-in" id="func-1">
       <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Reportar mascota" class="w-12 h-12 mt-1">
       <div>
         <h3 class="text-lg font-semibold text-teal-300">Reportar mascotas perdidas</h3>
         <p class="text-gray-300">Publica información y fotos de tu mascota perdida para que la comunidad y refugios te ayuden a encontrarla rápidamente.</p>
       </div>
     </div>
-    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start
+      transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-teal-400/70 slide-in" id="func-2">
       <img src="https://cdn-icons-png.flaticon.com/512/854/854866.png" alt="Geolocalización" class="w-12 h-12 mt-1">
       <div>
         <h3 class="text-lg font-semibold text-teal-300">Geolocalización avanzada</h3>
         <p class="text-gray-300">Utiliza tecnología GPS para registrar y visualizar avistamientos en tiempo real, optimizando la búsqueda por ubicación.</p>
       </div>
     </div>
-    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start
+      transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-teal-400/70 slide-in" id="func-3">
       <img src="https://cdn-icons-png.flaticon.com/512/1946/1946433.png" alt="Comunidad" class="w-12 h-12 mt-1">
       <div>
         <h3 class="text-lg font-semibold text-teal-300">Comunidad activa y solidaria</h3>
         <p class="text-gray-300">Conecta con dueños de mascotas, rescatistas, veterinarias y refugios en una red colaborativa para maximizar el rescate.</p>
       </div>
     </div>
-    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start
+      transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-teal-400/70 slide-in" id="func-4">
       <img src="https://cdn-icons-png.flaticon.com/512/1827/1827343.png" alt="Alertas" class="w-12 h-12 mt-1">
       <div>
         <h3 class="text-lg font-semibold text-teal-300">Alertas y notificaciones</h3>
         <p class="text-gray-300">Recibe avisos inmediatos de mascotas perdidas cerca de ti o en tu zona, para actuar a tiempo y ayudar.</p>
       </div>
     </div>
-    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start
+      transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-teal-400/70 slide-in" id="func-5">
       <img src="https://cdn-icons-png.flaticon.com/512/893/893292.png" alt="Consejos" class="w-12 h-12 mt-1">
       <div>
         <h3 class="text-lg font-semibold text-teal-300">Interacción y consejos</h3>
         <p class="text-gray-300">Comparte y accede a consejos sobre el cuidado de mascotas, reporta avistamientos y deja mensajes de apoyo.</p>
       </div>
-        </div>
-    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start">
+    </div>
+    <div class="bg-black/80 rounded-xl shadow p-5 flex gap-4 items-start
+      transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 hover:ring-2 hover:ring-teal-400/70 slide-in" id="func-6">
       <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Redes sociales" class="w-12 h-12 mt-1">
       <div>
         <h3 class="text-lg font-semibold text-teal-300">Compartir en redes sociales</h3>
@@ -100,11 +116,32 @@
   </div>
 </section>
 
-  <!-- Footer sencillo -->
-  <footer class="bg-black py-5 mt-auto">
-    <div class="max-w-6xl mx-auto px-4 flex justify-center items-center text-gray-400 text-sm">
-      &copy; 2024 SnowPet. Todos los derechos reservados.
+  <!-- Footer -->
+  <footer class="bg-black py-6 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm space-y-2 md:space-y-0">
+      <span>&copy; 2025 <span class="font-bold text-teal-400">SnowPet</span>. Todos los derechos reservados.</span>
+      <span>
+        Razón Social: SnowPet Bolivia | NIT: 123456789 <br class="block md:hidden" />
+        Proyecto académico universitario. No se recopilan datos personales.
+      </span>
+      <a href="mailto:contacto@snowpet.com.bo" class="text-teal-400 underline hover:text-teal-200 transition">Contacto legal</a>
     </div>
   </footer>
+  <script>
+    // Animación de entrada Hero
+    window.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("hero-text").classList.add("show");
+      setTimeout(() => {
+        document.getElementById("hero-logo").classList.add("show");
+      }, 300);
+
+      // Animación de entrada para funcionalidades (en cascada)
+      for(let i = 1; i <= 6; i++) {
+        setTimeout(() => {
+          document.getElementById("func-" + i).classList.add("show");
+        }, 500 + i * 150); // 150ms de diferencia para efecto cascada
+      }
+    });
+  </script>
 </body>
 </html>

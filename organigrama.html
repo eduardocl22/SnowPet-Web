@@ -5,6 +5,18 @@
   <title>SnowPet – Organigrama</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .slide-in {
+      transform: translateX(80px);
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.77,0,0.18,1);
+      will-change: transform, opacity;
+    }
+    .slide-in.show {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  </style>
 </head>
 <body class="bg-[#172335] min-h-screen flex flex-col text-white">
 
@@ -28,10 +40,9 @@
   </nav>
   <div class="pt-24"></div>
 
-  <!-- Encabezado tipo tarjeta para Organigrama -->
+  <!-- Encabezado tipo tarjeta para Organigrama + imagen, ambos animados -->
   <section class="max-w-5xl mx-auto px-4 py-8">
-    <!-- Encabezado centrado en una fila (icono al lado del texto) -->
-    <div class="bg-[#155e75] rounded-t-xl px-6 py-6 flex flex-row items-center justify-center space-x-4 mb-0">
+    <div class="bg-[#155e75] rounded-t-xl px-6 py-6 flex flex-row items-center justify-center space-x-4 mb-0 slide-in">
       <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <circle cx="12" cy="5" r="2" stroke="currentColor" stroke-width="2" fill="none"/>
         <circle cx="5" cy="19" r="2" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -40,8 +51,7 @@
       </svg>
       <h2 class="text-2xl md:text-3xl font-bold text-white">Organigrama</h2>
     </div>
-    <!-- Fondo blanco y borde turquesa solo en la imagen -->
-    <div class="bg-white rounded-b-xl flex justify-center items-center p-0">
+    <div class="bg-white rounded-b-xl flex justify-center items-center p-0 slide-in">
       <img src="images/organigrama.png" alt="Organigrama SnowPet" class="rounded-xl border-2 border-teal-400 shadow-lg">
     </div>
   </section>
@@ -49,17 +59,18 @@
   <!-- PLANEACIÓN ESTRATÉGICA -->
   <section class="max-w-4xl mx-auto px-4 py-10">
     <h2 class="text-2xl font-bold text-teal-300 mb-8 text-center">Planeación Estratégica</h2>
-    <!-- Misión y Visión alineadas -->
     <div class="flex flex-col md:flex-row gap-6 mb-8 justify-center">
       <!-- Misión -->
-      <div class="flex-1 bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex flex-col items-center">
+      <div class="flex-1 bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex flex-col items-center
+      transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-105 hover:ring-2 hover:ring-teal-400/70 slide-in">
         <h3 class="text-xl font-extrabold text-teal-300 mb-2">Misión</h3>
         <p class="text-gray-100 text-center">
           Ayudar a dueños de mascotas a reencontrarse con sus animales perdidos de forma rápida y eficiente, mediante una plataforma que conecta a la comunidad, refugios y clínicas veterinarias con tecnología avanzada de geolocalización y notificaciones en tiempo real.
         </p>
       </div>
       <!-- Visión -->
-      <div class="flex-1 bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex flex-col items-center">
+      <div class="flex-1 bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex flex-col items-center
+      transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-105 hover:ring-2 hover:ring-teal-400/70 slide-in">
         <h3 class="text-xl font-extrabold text-teal-300 mb-2">Visión</h3>
         <p class="text-gray-100 text-center">
           Ser la mejor aplicación en la búsqueda y recuperación de mascotas perdidas, creando una red global de apoyo entre dueños, refugios y veterinarios, reduciendo drásticamente la cantidad de mascotas extraviadas.
@@ -67,7 +78,8 @@
       </div>
     </div>
     <!-- Valores grande abajo -->
-    <div class="bg-[#16415e] rounded-2xl shadow-lg p-8 mt-6 mx-auto max-w-2xl">
+    <div class="bg-[#16415e] rounded-2xl shadow-lg p-8 mt-6 mx-auto max-w-2xl
+    transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-105 hover:ring-2 hover:ring-teal-400/70 slide-in">
       <h3 class="text-2xl font-extrabold text-teal-300 mb-4 text-center">Valores</h3>
       <ul class="list-disc ml-6 space-y-2 text-gray-100">
         <li>
@@ -96,24 +108,28 @@
   <section class="max-w-5xl mx-auto px-4 py-10">
     <h2 class="text-2xl font-bold text-teal-300 mb-8 text-center">Objetivos Institucionales</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center">
+      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center
+      transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-105 hover:ring-2 hover:ring-teal-400/70 slide-in">
         <span class="text-gray-100 font-semibold">
           Aumentar la tasa de recuperación de mascotas reportadas como perdidas en la plataforma en los próximos 12 meses, fortaleciendo alianzas con refugios y clínicas veterinarias.
         </span>
       </div>
-      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center">
+      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center
+      transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-105 hover:ring-2 hover:ring-teal-400/70 slide-in">
         <span class="text-gray-100 font-semibold">
           Expandir la base de usuarios en un 30% en los próximos 6 meses, enfocándose en dueños de mascotas en nuevas ciudades.
         </span>
       </div>
-      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center">
+      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center
+      transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-105 hover:ring-2 hover:ring-teal-400/70 slide-in">
         <span class="text-gray-100 font-semibold">
           Mejorar la retención de usuarios activos en un 30% ofreciendo funciones adicionales y atención personalizada.
         </span>
       </div>
     </div>
     <div class="grid grid-cols-1">
-      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center mx-auto md:w-2/3">
+      <div class="bg-[#1f3b4d] rounded-2xl shadow-lg p-6 flex items-center justify-center min-h-[110px] text-center mx-auto md:w-2/3
+      transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-105 hover:ring-2 hover:ring-teal-400/70 slide-in">
         <span class="text-gray-100 font-semibold">
           Innovar continuamente para diferenciar a SnowPet como la plataforma más rápida y eficiente en búsqueda y rescate de mascotas.
         </span>
@@ -121,12 +137,35 @@
     </div>
   </section>
   
-
-  <!-- Footer -->
-  <footer class="bg-black py-5 mt-auto">
-    <div class="max-w-6xl mx-auto px-4 flex justify-center items-center text-gray-400 text-sm">
-      &copy; 2024 SnowPet. Todos los derechos reservados.
+  <!-- Footer profesional con documentación legal -->
+  <footer class="bg-black py-6 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm space-y-2 md:space-y-0">
+      <span>&copy; 2025 <span class="font-bold text-teal-400">SnowPet</span>. Todos los derechos reservados.</span>
+      <span>
+        Razón Social: SnowPet Bolivia | NIT: 123456789 <br class="block md:hidden" />
+        Proyecto académico universitario. No se recopilan datos personales.
+      </span>
+      <a href="https://mail.google.com/mail/?view=cm&to=carloseduardocl2015@gmail.com" class="text-teal-400 underline hover:text-teal-200 transition">Contacto legal</a>
     </div>
   </footer>
+
+  <script>
+    // Animación "slide-in" cuando los elementos entran en el viewport
+    document.addEventListener('DOMContentLoaded', function () {
+      const slideEls = document.querySelectorAll('.slide-in');
+      const options = {
+        threshold: 0.15
+      };
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            obs.unobserve(entry.target); // animación solo la primera vez
+          }
+        });
+      }, options);
+      slideEls.forEach(el => observer.observe(el));
+    });
+  </script>
 </body>
 </html>

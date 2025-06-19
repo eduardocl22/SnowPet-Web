@@ -5,10 +5,14 @@
   <title>SnowPet – FODA, Porter y BCG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .slide-in { transform: translateX(80px); opacity: 0; transition: all 0.8s cubic-bezier(0.77,0,0.18,1); will-change: transform, opacity; }
+    .slide-in.show { transform: translateX(0); opacity: 1; }
+  </style>
 </head>
 <body class="bg-[#172335] min-h-screen flex flex-col text-white">
 
-  <!-- Header/Nav -->
+  <!-- Header/Nav igual que el index -->
   <nav class="bg-black w-full fixed top-0 z-10">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center space-x-2">
@@ -28,17 +32,94 @@
   </nav>
   <div class="pt-24"></div>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <div class="max-w-5xl mx-auto px-4 py-12">
-    <h1 class="text-3xl font-bold text-teal-300 mb-6">FODA, Porter y BCG</h1>
-    <!-- Aquí agrega tu análisis, tablas, etc. -->
-  </div>
+  <!-- MATRIZ FODA -->
+  <section class="max-w-5xl mx-auto px-4 py-8">
+    <div class="bg-[#155e75] rounded-t-xl px-6 py-6 flex items-center space-x-4 mb-0 slide-in">
+      <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 12h16M12 4v16"/>
+      </svg>
+      <h2 class="text-2xl md:text-3xl font-bold text-white">FODA</h2>
+    </div>
+    <div class="bg-[#1f3b4d] rounded-b-xl px-6 py-8 flex flex-col items-center slide-in">
+      <img src="images/foda.jpg" alt="Matriz FODA SnowPet" class="rounded-xl border-2 border-teal-400 shadow max-w-2xl w-full h-auto mb-4">
+      <span class="text-white font-medium">Matriz FODA de SnowPet</span>
+    </div>
+  </section>
 
-  <!-- Footer -->
-  <footer class="bg-black py-5 mt-auto">
-    <div class="max-w-6xl mx-auto px-4 flex justify-center items-center text-gray-400 text-sm">
-      &copy; 2024 SnowPet. Todos los derechos reservados.
+  <!-- ANALISIS DE ESTRATEGIAS -->
+  <section class="max-w-5xl mx-auto px-4 py-8">
+    <div class="bg-[#155e75] rounded-t-xl px-6 py-6 flex items-center space-x-4 mb-0 slide-in">
+      <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l6 6M15 9l-6 6"/>
+      </svg>
+      <h2 class="text-2xl md:text-3xl font-bold text-white">Análisis de Estrategias</h2>
+    </div>
+    <div class="bg-[#1f3b4d] rounded-b-xl px-6 py-8 flex flex-col items-center slide-in">
+      <img src="images/analisis.jpg" alt="Análisis de Estrategias SnowPet" class="rounded-xl border-2 border-teal-400 shadow max-w-2xl w-full h-auto mb-4">
+      <span class="text-white font-medium">Estrategias implementadas en base al análisis FODA</span>
+    </div>
+  </section>
+
+  <!-- PORTER -->
+  <section class="max-w-5xl mx-auto px-4 py-8">
+    <div class="bg-[#155e75] rounded-t-xl px-6 py-6 flex items-center space-x-4 mb-0 slide-in">
+      <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v8l6 4"/>
+      </svg>
+      <h2 class="text-2xl md:text-3xl font-bold text-white">Modelo de Rivalidad Amplificada de Porter</h2>
+    </div>
+    <div class="bg-[#1f3b4d] rounded-b-xl px-6 py-8 flex flex-col items-center slide-in">
+      <img src="images/porter.jpg" alt="Modelo de Porter SnowPet" class="rounded-xl border-2 border-teal-400 shadow max-w-2xl w-full h-auto mb-4">
+      <span class="text-white font-medium">Análisis de las 5 Fuerzas de Porter</span>
+    </div>
+  </section>
+
+  <!-- BCG -->
+  <section class="max-w-5xl mx-auto px-4 py-8">
+    <div class="bg-[#155e75] rounded-t-xl px-6 py-6 flex items-center space-x-4 mb-0 slide-in">
+      <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+        <circle cx="9" cy="9" r="2" stroke="currentColor" stroke-width="2" fill="none"/>
+        <circle cx="15" cy="15" r="2" stroke="currentColor" stroke-width="2" fill="none"/>
+      </svg>
+      <h2 class="text-2xl md:text-3xl font-bold text-white">La Matriz BCG</h2>
+    </div>
+    <div class="bg-[#1f3b4d] rounded-b-xl px-6 py-8 flex flex-col items-center slide-in">
+      <img src="images/bcg.jpg" alt="Matriz BCG SnowPet" class="rounded-xl border-2 border-teal-400 shadow max-w-2xl w-full h-auto mb-4">
+      <span class="text-white font-medium">Matriz BCG de SnowPet</span>
+    </div>
+  </section>
+
+  <!-- Footer profesional -->
+  <footer class="bg-black py-6 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm space-y-2 md:space-y-0">
+      <span>&copy; 2025 <span class="font-bold text-teal-400">SnowPet</span>. Todos los derechos reservados.</span>
+      <span>
+        Razón Social: SnowPet Bolivia | NIT: 123456789 <br class="block md:hidden" />
+        Proyecto académico universitario. No se recopilan datos personales.
+      </span>
+      <a href="mailto:contacto@snowpet.com.bo" class="text-teal-400 underline hover:text-teal-200 transition">Contacto legal</a>
     </div>
   </footer>
+
+  <script>
+    // Intersection Observer para animaciones al hacer scroll
+    document.addEventListener('DOMContentLoaded', function () {
+      const slideEls = document.querySelectorAll('.slide-in');
+      const options = { threshold: 0.15 };
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, options);
+      slideEls.forEach(el => observer.observe(el));
+    });
+  </script>
 </body>
 </html>
